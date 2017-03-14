@@ -17,10 +17,10 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "php -r \"file_exists('./config/service.php') || copy('./vendor/takeoo/config/service.php', './config/service.php');\""
+      "php -r \"!file_exists('./config/service.php') || copy('./vendor/laravel-service-layer/takeoo/config/service.php', './config/service.php');\""
     ],
     "post-update-cmd": [
-      "php -r \"file_exists('./config/service.php') || copy('./vendor/takeoo/config/service.php', './config/service.php');\""
+      "php -r \"!file_exists('./config/service.php') || copy('./vendor/laravel-service-layer/takeoo/config/service.php', './config/service.php');\""
     ]
   }
 }
