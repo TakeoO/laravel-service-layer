@@ -3,6 +3,7 @@
 namespace Takeoo\Service\Traits;
 
 use Illuminate\Support\Facades\App;
+use Takeoo\Service\Exception\InvalidServiceException;
 
 /**
  * Class Service
@@ -28,9 +29,8 @@ trait Service
     $services = config("service.services");
     
     if (!in_array($serviceName, array_keys($services)))
-      throw new \Exception(sprintf("Service not implemented [%s]", $serviceName));
+      throw new InvalidServiceException(sprintf("Service not implemented [%s]", $serviceName));
     
     return $services[$serviceName];
-    
   }
 }
