@@ -1,0 +1,14 @@
+{
+  "name": "takeoo/laravel-service-layer",
+  "description": "Package enables service layer in all laravel applications. Move business logic to where it belongs!",
+  "keywords": [
+    "laravel",
+    "service",
+    "layer"
+  ],
+  "autoloader": {
+    "psr4": {
+      "Takeoo\\Service\\": "./src/"
+    }
+  }
+}
