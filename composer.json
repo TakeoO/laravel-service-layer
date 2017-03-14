@@ -6,9 +6,18 @@
     "service",
     "layer"
   ],
+  "require": {
+    "php": ">=7.0.*",
+    "laravel/framework": ">=5.1.*"
+  },
   "autoloader": {
     "psr4": {
       "Takeoo\\Service\\": "./src/"
     }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"file_exists('./config/service.php') || copy('./vendor/takeoo/config/service.php', './config/service.php');\""
+    ]
   }
 }
