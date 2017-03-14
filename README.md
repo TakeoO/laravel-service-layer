@@ -65,7 +65,7 @@ class MyService
 ```
 
 
--- Add Service trait to your Controller.php class (if you extend it  with all your controller) or to every controller
+- Add Service trait to your Controller.php class (if you extend it  with all your controllers) or to every controller
  class in which you want to use Service layer
 
 ## Code
