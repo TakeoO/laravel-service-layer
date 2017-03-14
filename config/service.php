@@ -1,7 +1,7 @@
 <?php
 
 return [
-  "service" => [
+  "services" => [
     /*
      * Add your services here in format:
      * 'serviceAlias' = \My\Service\Class::class

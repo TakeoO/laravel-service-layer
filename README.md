@@ -55,11 +55,11 @@ class MyService
 
 - when you created new service class, you have to register it:
  - go to config/service.php
- - add your service to "service" array:
+ - add your service to "services" array:
  
 ```php
 
-'service' => [
+'services' => [
   'Example' => \ My\Service\Namespace\Example::class,
 ]
 ```

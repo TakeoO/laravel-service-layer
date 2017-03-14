@@ -24,13 +24,18 @@ trait Service
    * @return string
    * @throws \Exception
    */
-  public function getServicePath($serviceName) : string
+  public function getServicePath($serviceName): string
   {
     $services = config("service.services");
     
     if (!in_array($serviceName, array_keys($services)))
       throw new InvalidServiceException(sprintf("Service not implemented [%s]", $serviceName));
     
-    return $services[$serviceName];
+    $className = $services[$serviceName];
+    
+    if (!class_exists($className))
+      throw new InvalidServiceException(sprintf("Service not implemented [%s]", $serviceName));
+    
+    return $className;
   }
 }
