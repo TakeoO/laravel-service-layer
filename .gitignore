@@ -3,6 +3,7 @@ vendor/
 node_modules/
 bootstrap/compiled.php
 app/storage/
+.idea/
 bootstrap/cache/
 .env.*.php
 .env.php
