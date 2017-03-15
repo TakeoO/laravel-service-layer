@@ -1,6 +1,6 @@
 # Service Layer for laravel framework
 
-Extra simple service manager module for laravel app
+Extra simple, lightweight service manager module for laravel app
 
 ## Installation
 
@@ -63,7 +63,7 @@ class MyService
 ```php
 
 'services' => [
-  'Example' => \ My\Service\Namespace\Example::class,
+  'Example' => \My\Service\Namespace\Example::class,
 ]
 ```
 
