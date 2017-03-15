@@ -5,6 +5,10 @@ namespace Takeoo\Service;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class TakeooServiceServiceProvider
+ * @package Takeoo\Service
+ */
 class TakeooServiceServiceProvider extends ServiceProvider
 {
   /**
@@ -17,9 +21,6 @@ class TakeooServiceServiceProvider extends ServiceProvider
     ]);
   }
   
-  /**
-   *
-   */
   public function register()
   {
     //

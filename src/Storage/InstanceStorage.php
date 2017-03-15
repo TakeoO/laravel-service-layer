@@ -1,6 +1,6 @@
 <?php
 
-namespace Takeoo\Service\Storage\InstaceStorage;
+namespace Takeoo\Service\Storage;
 
 
 /**

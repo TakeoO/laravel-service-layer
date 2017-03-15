@@ -4,7 +4,7 @@ namespace Takeoo\Service\Traits;
 
 use Illuminate\Support\Facades\App;
 use Takeoo\Service\Exception\InvalidServiceException;
-use Takeoo\Service\Storage\InstaceStorage\InstanceStorage;
+use Takeoo\Service\Storage\InstanceStorage;
 
 /**
  * Class Service
