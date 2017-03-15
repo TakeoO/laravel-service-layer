@@ -9,9 +9,12 @@ Extra simple service manager module for laravel app
  composer require takeoo/laravel-service-layer
  ```
 
- - Check that **service.php** file was copied to *laravelRoot/config/* directory
-    -  if not copy it from *vendor/takeoo/laravel-service-layer/config/*   
+ - Add **\Takeoo\Service\TakeooServiceServiceProvider::class** to *config/app.php* "providers" array
 
+ - Run:
+ ```bash
+   php artisan vendor:publish      
+ ```
 
 
 ## Usage
@@ -67,6 +70,10 @@ class MyService
 
 - Add Service trait to your Controller.php class (if you extend it  with all your controllers) or to every controller
  class in which you want to use Service layer
+ 
+ 
+**By default all services are created as singletons, if you want to create non singleton class, provided its alias 
+in "service.non-singleton" array**
 
 ## Code
 

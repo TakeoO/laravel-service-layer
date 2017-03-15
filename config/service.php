@@ -7,7 +7,7 @@ return [
      * 'serviceAlias' = \My\Service\Class::class
      */
   ],
-  "singletons" => [
+  "non-singletons" => [
     /*
      * listed serviceAliases will not be declared as singletons
      */

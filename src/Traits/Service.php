@@ -72,13 +72,13 @@ trait Service
    */
   private function createService(string $serviceName, string $service)
   {
-    $singletons = config('service.singletons') ?? [];
+    $nonSingletons = config('service.non-singleton') ?? [];
     
     $serviceClass = App::make($service);
     
-    if (!in_array($serviceName, $singletons))
+    if (!in_array($serviceName, $nonSingletons))
       InstanceStorage::set($serviceName, $serviceClass);
     
-    return $service;
+    return $serviceClass;
   }
 }

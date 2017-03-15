@@ -1,6 +1,6 @@
 {
   "name": "takeoo/laravel-service-layer",
-  "description": "Package enables service layer in all laravel applications. Move business logic to where it belongs!",
+  "description": "Lightweight service layer for laravel application!",
   "keywords": [
     "laravel",
     "service",
@@ -12,15 +12,7 @@
   },
   "autoloader": {
     "psr4": {
-      "Takeoo\\Service\\": "./src/"
+      "Takeoo\\Service\\": "src/"
     }
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "php takeoo"
-    ],
-    "post-update-cmd": [
-      "php takeoo"
-    ]
   }
 }
