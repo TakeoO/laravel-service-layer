@@ -30,7 +30,7 @@ namespace  My\Service\Namespace;
 
 use Takeoo\Service;
 
-class MyService extend Service
+class MyService extends Service
 {
 // your code 
 }
